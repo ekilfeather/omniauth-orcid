@@ -6,16 +6,17 @@ module OmniAuth
   module Strategies
     class ORCID < OmniAuth::Strategies::OAuth2
 
-      DEFAULT_SCOPE = '/authenticate'
+      DEFAULT_SCOPE = '/orcid-bio/read-limited'
 
-      option :client_options, {
-        :site => 'http://sandbox.orcid.org',
-        :authorize_url => 'http://sandbox.orcid.org/oauth/authorize',
-        :token_url => 'https://sandbox.orcid.org/oauth/token',
-        :scope => '/orcid-profile/read-limited',
-        :response_type => 'code',
-        :mode => :header
-      }
+  
+        option :client_options, {
+          :site => 'http://sandbox.orcid.org',
+          :authorize_url => 'https://api.sandbox.orcid.org//oauth/authorize',
+          :token_url => 'https://api.sandbox.orcid.org//oauth/token',
+          :scope => '/orcid-profile/read-limited',
+          :response_type => 'code',
+          :mode => :header
+
 
 
       # Pull out unique ID for the user in the external system
