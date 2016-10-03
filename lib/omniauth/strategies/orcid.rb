@@ -10,7 +10,7 @@ module OmniAuth
 
   
         option :client_options, {
-          :site => 'http://api.sandbox.orcid.org',
+          :sites => 'http://sandbox.orcid.org',
           :authorize_url => 'https://sandbox.orcid.org/oauth/authorize',
           :token_url => 'https://sandbox.orcid.org/oauth/token',
           :scope => '/authorise',
