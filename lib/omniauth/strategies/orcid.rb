@@ -13,7 +13,7 @@ module OmniAuth
           :site => 'http://sandbox.orcid.org',
           :authorize_url => 'https://sandbox.orcid.org/oauth/authorize',
           :token_url => 'https://api.sandbox.orcid.org/oauth/token',
-          :scope => '/orcid-profile/read-limited',
+          :scope => '/authorise',
           :response_type => 'code',
           :mode => :header
           }
