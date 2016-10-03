@@ -6,13 +6,13 @@ module OmniAuth
   module Strategies
     class ORCID < OmniAuth::Strategies::OAuth2
 
-      DEFAULT_SCOPE = '/orcid-bio/read-limited'
+      DEFAULT_SCOPE = '/authorise'
 
   
         option :client_options, {
-          :site => 'http://sandbox.orcid.org',
-          :authorize_url => 'https://sandbox.orcid.org/oauth/authorize',
-          :token_url => 'https://api.sandbox.orcid.org/oauth/token',
+          :site => 'http://pub.sandbox.orcid.org',
+          :authorize_url => 'https://pub.sandbox.orcid.org/oauth/authorize',
+          :token_url => 'https://pub.sandbox.orcid.org/oauth/token',
           :scope => '/authorise',
           :response_type => 'code',
           :mode => :header
