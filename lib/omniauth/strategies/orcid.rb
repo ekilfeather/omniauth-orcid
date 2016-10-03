@@ -11,8 +11,8 @@ module OmniAuth
   
         option :client_options, {
           :site => 'http://pub.sandbox.orcid.org',
-          :authorize_url => 'https://pub.sandbox.orcid.org/oauth/authorize',
-          :token_url => 'https://pub.sandbox.orcid.org/oauth/token',
+          :authorize_url => 'https://pub.sandbox.orcid.org/v1.2/oauth/authorize',
+          :token_url => 'https://pub.sandbox.orcid.org/v1.2/oauth/token',
           :scope => '/authorise',
           :response_type => 'code',
           :mode => :header
