@@ -16,6 +16,7 @@ module OmniAuth
           :scope => '/orcid-profile/read-limited',
           :response_type => 'code',
           :mode => :header
+          }
 
 
 
