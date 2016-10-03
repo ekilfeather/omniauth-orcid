@@ -14,7 +14,7 @@ module OmniAuth
           :authorize_url => 'https://sandbox.orcid.org/oauth/authorize',
           :token_url => 'https://sandbox.orcid.org/oauth/token',
           :scope => '/authorise',
-          :response_type => 'code',
+          :response_type => 'access_token',
           :mode => :header
           }
 
